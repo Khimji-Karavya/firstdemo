@@ -1,4 +1,4 @@
-# firstdemo
+# firstdemo project
 For testing purpose
 
-First change in project
+First change in demo
