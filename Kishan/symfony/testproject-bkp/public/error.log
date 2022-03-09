@@ -1,0 +1,2 @@
+[Fri Mar 04 17:09:06.771262 2022] [php7:error] [pid 2463] [client 127.0.0.1:49688] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 98570240 bytes) in /home/chintan/web/projects/Learning/Kishan/symfony/testproject/src/Controller/RegistrationController.php on line 44
+[Fri Mar 04 17:09:06.842909 2022] [php7:error] [pid 2463] [client 127.0.0.1:49688] PHP Fatal error:  Nesting level too deep - recursive dependency? in /home/chintan/web/projects/Learning/Kishan/symfony/testproject/vendor/symfony/event-dispatcher/EventDispatcher.php on line 177

@@ -1,0 +1,3 @@
+<script>
+    hello js
+</script>

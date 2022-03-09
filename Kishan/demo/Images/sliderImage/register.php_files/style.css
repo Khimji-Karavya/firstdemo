@@ -1,0 +1,54 @@
+.logo {
+	height: 80px;
+  	width: 80px;
+}
+.slider {
+  	height: 400px;
+  	width: 100%;
+}
+.p-image {
+  	height: 200px;
+  	width: 200px;
+}
+.p-image {
+  	min-height: 100px;
+  	width: 200px;
+}
+.orange {
+  background-color: rgb(47, 69, 109);
+}
+.service {
+  	min-height: 100px;
+  	background-color: cadetblue;
+  	padding: 55px;
+}
+.d-flex a {
+  	text-decoration: none;
+  	color: aliceblue;
+  	padding: 5px;
+}
+.product-title {
+  	text-transform: capitalize;
+  	font-weight: bold;
+}
+.product-code {
+  	color: grey;
+}
+.product-price {
+  	text-decoration: line-through;
+}
+.footer-bg {
+  	background-color: rgba(90, 90, 90, 0.5);
+}
+a {
+  	text-decoration: none;
+}
+.blue {
+  	background-color: rgb(8, 134, 252);
+}
+.dashboard {
+	min-height: 300px;
+}
+.red{
+	color: red;
+}

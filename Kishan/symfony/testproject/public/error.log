@@ -1,0 +1,1 @@
+[Fri Mar 04 19:09:15.975265 2022] [php7:error] [pid 2385] [client 127.0.0.1:52858] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 98570240 bytes) in /home/chintan/web/projects/Learning/Kishan/symfony/testproject/src/Controller/RegistrationController.php on line 30, referer: http://testproject.ctn/register

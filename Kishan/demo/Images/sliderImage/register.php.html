@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="register.php_files/bootstrap.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="register.php_files/font-awesome.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous">
+    <link rel="stylesheet" href="register.php_files/font-awesome.css">
+    <script src="register.php_files/jquery.js"></script>
+    <link rel="stylesheet" href="register.php_files/style.css">
+    <title></title>
+</head>
+<body onload="document.getElementById('myInput').focus();">
+     <!--statrt header-->
+    <nav class="navbar navbar-expand-lg navbar-light orange">
+      <div class="container-fluid">
+          <a class="navbar-brand" href="http://phpdemo.ctn/index.php"><img class="logo" src="register.php_files/logo.jpeg"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                  <!--home page ancore link-->
+                  <li class="nav-item">
+                      <a class="nav-link active text-white" aria-current="page" href="http://phpdemo.ctn/index.php">Home</a>
+                  </li>
+                  <!--end home page ancore link-->
+                  
+                  <!--brand page ancore link-->
+                  <li class="nav-item">
+                      <a class="nav-link active text-white" aria-current="page" href="http://phpdemo.ctn/dashboard.php">Dashabord</a>
+                  </li>
+                  <!-- end brand page ancore link-->
+
+                  <!--service page ancore link-->
+                  <li class="nav-item">
+                      <a class="nav-link active  text-white" aria-current="page" href="#">Service</a>
+                  </li>
+                  <!--end service page ancore link-->
+
+                  <!--product page ancore link-->
+                  <li class="nav-item">
+                      <a class="nav-link active text-white" aria-current="page" href="#">Product</a>
+                  </li>
+                  <!--end product page ancore link-->
+
+                  <!--dropdown tools start-->
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle  text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Tools
+                      </a>
+                      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item" href="#">Integration</a></li>
+                          <li><a class="dropdown-item" href="#">catalogay</a></li>
+                      </ul>
+                  </li>
+                  <!--dropdown end-->
+
+              </ul>
+              <!--register and login link-->
+                                    <div class="d-flex">
+                        <div><a href="http://phpdemo.ctn/register.php">Register</a></div>
+                    </div>
+                    <div class="d-flex p-2">
+                        <div><a href="http://phpdemo.ctn/login.php">Login</a></div>
+                    </div>
+                              <!--end register and login link-->
+          </div>
+      </div>
+  </nav>
+  <!--end header-->
+ 
+
+
+
+
+    <section>
+
+        <div class="mask d-flex align-items-center mt-5">
+            <div class="container h-100">
+                <!--row-->
+                <div class="row d-flex justify-content-center align-items-center h-100">
+                    <!--col grid-->
+                    <div class="col-12 col-md-9 col-lg-7 col-xl-6">
+                        <div class="card" style="border-radius: 15px;">
+                            <div class="card-body p-5">
+                                <h2 class="text-capitalize text-center mb-5">Registration form</h2>
+                                <form method="POST">
+                                    <!--first name input -->
+                                    <div class="form-outline mb-4">
+                                        <label class="form-label" for="form3Example1cg">First name <span style="color: red;">*</span></label>
+                                        <input id="myInput" type="text" name="fname" placeholder="Enter first name " class="form-control form-control-lg" tabindex="1">
+                                            <span style="color: red; text-transform:capitalize"></span>
+                                    </div>
+                                    <!--end first name input -->
+                                    <!--last name input -->
+                                    <div class="form-outline mb-4">
+                                        <label class="form-label" for="form3Example1cg">Last  name <span style="color: red;">*</span></label>
+                                        <input type="text" name="lname" placeholder="Enter last name " class="form-control form-control-lg" tabindex="2">
+                                        <span style="color: red; text-transform:capitalize"></span>
+                                    </div>
+                                    <!--end last  name input -->
+                                    <!--email input -->
+                                    <div class="form-outline mb-4">
+                                        <label class="form-label">Your email <span style="color: red;">*</span></label>
+                                        <input type="email" name="email" placeholder="Enter email address " class="form-control form-control-lg" tabindex="3">
+                                        <span style="color: red; text-transform:capitalize"></span>
+                                    </div>
+                                    <!--end email input -->
+                                    <!--password input-->
+                                    <div class="form-outline mb-4">
+                                        <label class="form-label" for="form3Example4cg">Password <span style="color: red;">*</span></label>
+                                        <input type="password" name="password" placeholder="Enter password " class="form-control form-control-lg" tabindex="4">
+                                        <span style="color: red; text-transform:capitalize"></span>
+                                    </div>
+                                    <!--end password input-->
+                                    <!--conform password input-->
+                                    <div class="form-outline mb-4">
+                                        <label class="form-label" for="form3Example4cg">Conform password <span style="color: red;">*</span></label>
+                                        <input type="password" name="conform" placeholder="Enter conform password " class="form-control form-control-lg" tabindex="5">
+                                        <span style="color: red; text-transform:capitalize"></span>
+                                    </div>
+                                    <!--end conform password input-->
+                                    <!--date of birth input-->
+                                    <div class="form-outline mb-4">
+                                        <label class="form-label" for="form3Example4cg">Date of birth <span style="color: red;">*</span></label>
+                                        <input type="date" name="dob" class="form-control form-control-lg" tabindex="6">
+                                        <span style="color: red;"></span>
+                                    </div>
+                                    <!--end date of birth input-->
+                                    <!--zender input-->
+                                    <div class="form-outline mb-4">
+                                        <label class="form-lable">Gender <span style="color: red;">*</span></label>
+                                        <br>
+                                       
+                                        <label class="radio-inline">
+                                            <input type="radio" name="gender" value="male" tabindex="7">Male
+                                        </label>
+                                        <label class="radio-inline">
+                                            <input type="radio" name="gender" value="female" tabindex="8">Female
+                                        </label>
+                                        <span style="color: red; text-transform:capitalize"></span>
+                                    </div>
+                                    <!--end zender input-->
+                                    <!--mobile number input-->
+                                    <div class="form-outline mb-4">
+                                        <label class="form-label" for="form3Example4cdg">Mobile number <span style="color: red;">*</span></label>
+                                        <input type="text" name="phone" placeholder="Enter mobile number " class="form-control form-control-lg" tabindex="9">
+                                        <span style="color: red; text-transform:capitalize"></span>
+                                    </div>
+                                    <!--end mobile number input-->
+                                    <!--country input-->
+                                    <div class="form-outline mb-4">
+                                        <select id="country" name="country">
+                                            <option selected="selected">select country</option>
+                                                                                        <option id="cid" value="1" onclick="myState(1)"> India</option>
+                                                                                        <option id="cid" value="2" onclick="myState(2)"> US</option>
+                                                                                        <option id="cid" value="3" onclick="myState(3)"> uk</option>
+                                                                                    </select>    
+                                    </div>
+                                    <!--end country input-->
+                                    <!--state input-->
+                                    <div class="form-outline mb-5">
+                                        <select id="statedroup" name="state" class="form-select">
+                                            <option selected="selected">select state</option>
+                                        </select>   
+                                    </div>
+                                    <!--end state input-->
+                                    <!--city input-->
+                                    <div class="form-outline mb-4 dropdown-menu">
+                                        <select id="citydroup" name="city">                                                 <option class="dropdown-item" selected="selected">select city</option>
+
+                                        </select>   
+                                    </div>
+                                    <!--end city input-->
+                                    <!--terms and condition checkbox -->
+                                    <div class="form-check d-flex justify-content-center mb-5">
+                                        <input class="form-check-input me-2" type="checkbox" name="terms" value="yes" tabindex="11">
+                                        <label class="form-check-label" for="form2Example3g">
+                                            I agree all statements in <a href="#!" class="text-body"><u>Terms of
+                                                    service</u></a>
+                                        </label>
+                                        <span style="color: red; text-transform:capitalize"></span>
+                                    </div>
+                                    <!--terms and condition checkbox -->
+                                    <!--register button-->
+                                    <div class="d-flex justify-content-center">
+                                        <button type="submit" name="submit" class="btn btn-block btn-lg gradient-custom-4 blue text-white" tabindex="12">Register</button>
+                                    </div>
+                                    <!--end register button-->
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+ <!-- ajax code to get state -->
+ <script>
+        // function myState(id){
+// 
+            // $.ajax({
+                // type: "POST",
+                // url: 'getStateList.php',
+                // data: { id : id },
+                // dataType: 'json',
+                // success: function(data)
+                // {
+                    // for(i = 0; i <= data.length; i++) {
+                            // $("#statedroup").append("<option value="+data[i].id+" onclick=myCity("+data[i].id+")>"+data[i].name+"</option>");
+                    // }
+                // }
+            // });
+// 
+        // }
+
+        function myCity(id){
+            $.ajax({
+                type: "POST",
+                url: 'getCity.php',
+                data: {id:id},
+                dataType: 'json',
+                success: function(data)
+                {
+                    for(i = 0; i <= data.length; i++) {
+                        $("#citydroup").append("<option value="+data[i].id+">"+data[i].name+"</option>");
+                    }
+                }
+            });
+        }
+
+        $(document).ready(function() {
+            $('#country').on('change', function() {
+                var country_id = this.value;
+
+
+                $.ajax({
+                    type: "POST",
+                    url: 'getStateList.php',
+                    data: { country_id: country_id },
+                    dataType: 'json',
+                    success: function(data){
+                        $("#statedroup").empty();
+                        $("#statedroup").append("<option>Select state</option>");
+                        $("#citydroup").empty();
+                        $("#citydroup").append("<option>Select city</option>");
+
+                        for(i = 0; i <= data.length; i++) {
+
+                            $("#statedroup").append("<option value="+data[i].id+" onclick=myCity("+data[i].id+")>"+data[i].name+"</option>");
+                        }
+                        $('#citydroup').append('<option value="">Select state first </option>'); 
+                    }
+                });
+            });    
+            // $('#state-dropdown').on('change', function() {
+            // var state_id = this.value;
+            // $.ajax({
+            // url: "cities-by-state.php",
+            // type: "POST",
+            // data: {
+            // state_id: state_id
+            // },
+            // cache: false,
+            // success: function(result){
+            // $("#city-dropdown").html(result);
+            // }
+            // });
+            // });
+});
+        
+</script>
+    
+    
+
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="register.php_files/bootstrap.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="register.php_files/style.css"> <title>
+    </title>
+
+
+
+    <!--statrt footer-->
+    <footer class="text-center text-lg-start pt-2 mt-5 footer-bg">
+        <!-- Grid container -->
+        <div class="container p-4">
+            <!--Grid row-->
+            <div class="row">
+                <!--Grid column-->
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">About us</h5>
+
+                    <ul class="list-unstyled mb-0">
+                        <li>
+                            <a href="#!" class="text-dark">Link 1</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-dark">Link 2</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-dark">Link 3</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-dark">Link 4</a>
+                        </li>
+                    </ul>
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase mb-0">Contact us</h5>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#!" class="text-dark">Link 1</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-dark">Link 2</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-dark">Link 3</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-dark">Link 4</a>
+                        </li>
+                    </ul>
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Address</h5>
+
+                    <div id="map-container-google-1" class="z-depth-1-half map-container">
+                        <iframe src="https://maps.google.com/maps?q=manhatan&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=&amp;output=embed" style="border:0" allowfullscreen="" frameborder="0"></iframe>
+                    </div>
+                </div>
+                <!--Grid column-->
+
+
+            </div>
+            <!--Grid row-->
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            ©2022 Copyright:
+            <a class="text-dark" href="https://mdbootstrap.com/">kishan@gmail.com</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+
+    <!-- footer-->
+
+
+
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="register.php_files/bootstrap.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+      -->
+
+</body></html>

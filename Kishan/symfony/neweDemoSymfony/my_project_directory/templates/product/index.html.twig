@@ -1,0 +1,122 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello ProductController!{% endblock %}   
+{% block body %}
+<style>
+    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
+    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+</style>
+<section class="vh-100 bg-image" style="background-image: url('https://mdbcdn.b-cdn.net/img/Photos/new-templates/search-box/img4.webp');">
+  <div class="mask d-flex align-items-center h-100 gradient-custom-3">
+    <div class="container h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-12 col-md-9 col-lg-7 col-xl-6">
+          <div class="card" style="border-radius: 15px;">
+            <div class="card-body p-5">
+              <h2 class="text-center mb-5">Add Product</h2>
+			  {# start form #}
+                {{ form_start(form, {'attr': {'novalidate': 'novalidate'}}) }}
+
+				{# start name inpute #}
+                <div class="form-outline mb-4">
+                  <label class="form-label" for="form3Example1cg">{{ form_label(form.name)}}</label><span style="color:red;padding-left:5px;">*</span>
+
+                    {{ form_widget(form.name, {'attr':{'class' : 'form-control', 'placeholder':'Enter product name'}}) }}
+                  	<span class="text-danger">{{ form_errors(form.name) }}</span>
+                </div>
+
+				{# start price inpute #}
+                <div class="form-outline mb-4">
+                  <label class="form-label" for="form3Example1cg">{{ form_label(form.price)}}</label><span style="color:red;padding-left:5px;">*</span>
+                    {{ form_widget(form.price, {'attr':{
+						'class' : 'form-control',
+						'placeholder':'Enter product price'
+						}})
+					}}
+                    <span class="text-danger">{{ form_errors(form.price) }}</span>
+                </div>
+
+				{# start discripion inpute #}
+                <div class="form-outline mb-4">
+                  <label class="form-label" for="form3Example1cg">{{ form_label(form.discription)}}</label><span style="color:red;padding-left:5px;">*</span>
+                    {{ form_widget(form.discription, {'attr':{
+						'class' : 'form-control',
+						'placeholder':'Enter product description'
+						}})
+					}}
+                    <span class="text-danger">{{ form_errors(form.discription) }}</span>
+                </div>
+
+				{# start title inpute  #}
+                <div class="form-outline mb-4">
+                  <label class="form-label" for="form3Example1cg">{{ form_label(form.title)}}</label><span style="color:red;padding-left:5px;">*</span>
+                    {{ form_widget(form.title, {'attr':{
+						'class' : 'form-control',
+						'placeholder':'Enter product title'
+						}})
+					}}
+                    <span class="text-danger">{{ form_errors(form.title) }}</span>
+                </div>
+
+				{# start category inpute #}
+                 <div class="form-outline mb-4">
+                  <label class="form-label" for="form3Example1cg">{{ form_label(form.category)}}</label><span style="color:red;padding-left:5px;">*</span>
+                    {{ form_widget(form.category, {'attr':{
+						'class' : 'form-control',
+						'placeholder':'Enter product category'
+						}})
+					}}
+	                <span class="text-danger">{{ form_errors(form.category) }}</span>
+                </div>
+
+				{# statrt date inpute #}
+				<div class="form-outline mb-4">
+				  <div class='input-group date' id='datetimepicker123'>
+						<label class="form-label" for="form3Example1cg">{{ form_label(form.date)}}</label><span style="color:red;padding-left:5px;">*</span>
+                		{{ form_widget(form.date, {'attr':{
+							'class' : 'form-control',
+							}})}}
+				    	<span class="input-group-addon">
+				     	 	<span class="glyphicon glyphicon-calendar "></span>
+				    	</span>
+				  </div>
+	                <span class="text-danger">{{ form_errors(form.date) }}</span>
+				</div>
+				   
+				{# start state inpute #}
+                <div class="form-outline mb-4">
+                  <label class="form-label" for="form3Example1cg">{{ form_label(form.state)}}</label><span style="color:red;padding-left:5px;">*</span>
+                    {{ form_widget(form.state, {'attr':{'class' : 'form-control'}})}}
+	                <span class="text-danger">{{ form_errors(form.state) }}</span>
+                </div>
+
+				{# submit button #}
+                 <div class="form-outline mb-4 text-center">
+                  <label class="form-label" for="form3Example1cg">{{ form_label(form.save)}}</label>
+                    {{ form_widget(form.save, {'attr':{'class' : 'btn btn-success btn-block btn-lg gradient-custom-4'}})}}
+                </div>   
+                {{ form_end(form) }}
+				{# end form #}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{# load bostrap jquery #}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.15.1/moment.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.7.14/js/bootstrap-datetimepicker.min.js"></script>
+<script>
+	$(function() {
+	  	var today = new Date();
+  		$('#datetimepicker123').datetimepicker({
+	    	format: 'YYYY-M-D',
+	    	maxDate: today,
+  		});
+	});
+  </script>
+{% endblock %}

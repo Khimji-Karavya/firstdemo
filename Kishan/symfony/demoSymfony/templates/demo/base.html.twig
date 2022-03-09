@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title>{% block title %} demo symfony template {% endblock %}</title>
+        {% block css %}
+        <link rel="stylesheet" href="/home/chintan/web/projects/Learning/Kishan/symfony/demoSymfony/public/css/style.css">
+        {% endblock %}
+
+    </head>
+    <body>
+        {% block body %}
+             <div class="navbar collapse navbar-collapse" >
+                {% block navbar %}
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a href="{{path('Homepage')}}">Home</a></li>
+                        <li class="nav-item"><a href="{{path('Dashboard')}}">Dashboard</a></li>
+                        <li><a href="{{path('Service')}}">Service</a></li>
+                    </ul>
+                {% endblock navbar %}
+            <div>
+            <div id="slider">
+             <img src="{{asset('/home/chintan/web/projects/Learning/Kishan/symfony/demoSymfony/public/images/after-query.png')}}" height=100px>
+                {% block slider %}
+                   
+                {% endblock %}
+            </div>
+            <div id="content">
+                {% block content %}
+                    <h1> content in template</h1>
+                {% endblock %}
+            </div>
+            <div id="footer">
+                {% block footer %}
+                    <h4> Footer <h4>
+                {% endblock %}
+            </div>
+        {% endblock body %}
+
+    </body>
+</html>
